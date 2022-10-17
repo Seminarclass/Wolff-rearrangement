@@ -1,0 +1,76 @@
+.center {
+  text-align: center;
+}
+
+
+.left {
+  text-align: left;
+}
+
+
+
+.right {
+  text-align: right;
+}
+
+
+
+
+.p1 {
+  font-size: 12.2px;
+}
+
+
+
+/* if want Protect copy letters on screen write (none)*/
+body {
+  user-select: ;
+}
+
+
+::selection{
+  color: #A3FF00;
+}
+
+
+
+
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* Global */
+body{
+height: 100%;
+width: 100%:
+padding: 4em;
+color: #09E319;
+font-family: 'Anonymous Pro', monospace;  
+background-color: #000000;  
+}
+
+.line-1{
+    position: relative;
+    top: 2.6%; 
+    width: 20em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 25;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 22em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
